@@ -1,11 +1,12 @@
 \documentclass[semifinal]{cpecmu}
+\usepackage{graphicx}
 
 %% This is a sample document demonstrating how to use the CPECMU
 %% project template. If you are having trouble, see "cpecmu.pdf" for
 %% documentation.
 
 % \projectNo{P069-1}
-\projectNo{S049-1}
+\projectNo{S049-2}
 \acadyear{2023}
 
 \titleTH{ระบบตรวจสอบประกาศนียบัตรออนไลน์ด้วยไฮเปอร์เลดเจอร์ฟาบริคบล็อคเชน}
@@ -82,15 +83,15 @@
 \include{chapters/approach}
 \include{chapters/eval}
 \ifproject
-% \include{chapters/conclusion}
+\include{chapters/conclusion}
 \fi
 
 \bibliography{sampleReport}
 
 \ifproject
 \normalspacing
-% \appendix
-% \include{chapters/appendix}
+\appendix
+\include{chapters/appendix}
 
 %% Display glossary (optional) -- need glossary option.
 \ifglossary\glossarypage\fi
@@ -98,12 +99,25 @@
 %% Display index (optional) -- need idx option.
 \ifindex\indexpage\fi
 
-% \begin{biosketch}
-% \begin{center}
-%   \includegraphics[width=1.5in]{mugshot.jpg}
-% \end{center}
-% Your biosketch goes here. Make sure it sits inside
-% the \texttt{biosketch} environment.
-% \end{biosketch}
-\fi % \ifproject
+\begin{biosketch}
+\begin{center}
+  \includegraphics[width=1.5in]{me.png}
+\end{center}
+\texttt{ชื่อ-นามสกุล : } คนธกานต์ ฟูคำ
+\\
+\texttt{ระดับการศึกษา : } ปริญญาตรี สาขา วิศวกรรมคอมพิวเตอร์ ภาควิชา วิศวกรรมคอมพิวเตอร์ คณะ
+วิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่
+\\
+\texttt{E-mail : } uncles1512@gmail.com
+\begin{center}
+  \includegraphics[width=1.5in]{me2.png}
+\end{center}
+\texttt{ชื่อ-นามสกุล : } คุณาสิน เตชะสืบ
+\\
+\texttt{ระดับการศึกษา : } ปริญญาตรี สาขา วิศวกรรมคอมพิวเตอร์ ภาควิชา วิศวกรรมคอมพิวเตอร์ คณะ
+วิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่
+\\
+\texttt{E-mail : } supalit1@gmail.com
+ \end{biosketch}
+\fi  \ifproject
 \end{document}
